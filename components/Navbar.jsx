@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa'
 export default function Navbar({currentPage}) {
   const linkStyle = "text-white text-md font-poppins bg-magenta py-1 px-2 ml-4 rounded-md"
   const activeLink = linkStyle + " py-2 px-3"
-  const linkStyleSmall = " text-lg "
+  const linkStyleSmall = " text-lg dark:text-white"
   const activeLinkSmall = linkStyleSmall + " bg-magenta-dark rounded-full"
   const shownDropdown = "grid text-center pt-4"
 
@@ -18,7 +18,7 @@ export default function Navbar({currentPage}) {
   if (useWindow() > 800) {
     return (
       <nav className=' flex justify-between py-10 mb-12'>
-        <Link className=' text-md font-poppins' href="/">T-MOBILE ON HOUK</Link>
+        <Link className=' text-md font-poppins dark:text-magenta' href="/">T-MOBILE ON HOUK</Link>
         <ul className=' flex items-center'>
           <li>
             <Link className={currentPage != 0 ? linkStyle : activeLink}  href="/">Our Team</Link>
@@ -37,9 +37,9 @@ export default function Navbar({currentPage}) {
     )
   } else {
     return (
-      <nav className=' text-white py-6 mb-12 bg-magenta border-b-2 rounded-lg'>
+      <nav className=' text-white py-6 mb-12 bg-magenta dark:bg-black  rounded-lg'>
           <div className='flex justify-between px-4 items-center'>
-          <Link className=' text-2xl font-poppins ' href="/">T-MOBILE ON HOUK</Link>
+          <Link className=' text-2xl font-poppins' href="/">T-MOBILE ON HOUK</Link>
           <button onClick={() => {handleDropDown()}}>
             <FaBars className='text-2xl' />
           </button>

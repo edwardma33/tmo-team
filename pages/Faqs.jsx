@@ -17,7 +17,7 @@ export default function Faqs() {
     </Head>
     <Navbar currentPage={1} />
     <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>FAQs</h1>
-    <main className=' mx-auto px-10 md:columns-2'>
+    <main className=' mx-auto px-10 md:columns-2 dark:text-white'>
       {foo.map(bar => {
         return bar
       })}
