@@ -6,7 +6,7 @@ const questionList = [
   },
   {
     header: "Does T-Mobile offer home internet?",
-    body: "Yes, we do offer home internet in addition to our phone service. It is available anyone, even if you dont have phone service with us. We do recommend the switch. ;)",
+    body: "Yes, we do offer home internet in addition to our phone service. It is available to anyone, even if you dont have phone service with us. We do recommend the switch. ;)",
     dateAnswered: "03/28/2023"
   },
   {
@@ -16,7 +16,7 @@ const questionList = [
   },
   {
     header: "What all does T-Mobile have to offer?",
-    body: "We offer many services. We have tablets, phones, laptops, home internet, trackers, watches, etc. These products have their own catalog of accesories, and they all run on our 5G network.",
+    body: "We offer many services. We have tablets, phones, laptops, home internet, trackers, watches, etc. These products have their own catalog of accessories, and they all run on our 5G network.",
     dateAnswered: "03/28/2023"
   },
   {

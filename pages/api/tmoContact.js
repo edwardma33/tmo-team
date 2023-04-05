@@ -13,7 +13,7 @@ const tmoContacts = [
     role: 'Insurance claims'
   },
   {
-    name: 'TMO For Buisness',
+    name: 'TMO For Business',
     tele: '1-866-478-0829',
     role: 'For any buisness related questions'
   }
