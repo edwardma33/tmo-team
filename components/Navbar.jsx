@@ -27,7 +27,7 @@ export default function Navbar({currentPage}) {
             <Link className={currentPage != 1 ? linkStyle : activeLink} href="Faqs">FAQS</Link>
           </li>
           <li>
-            <Link className={currentPage != 2 ? linkStyle : activeLink} href="Contact">contacts</Link>
+            <Link className={currentPage != 2 ? linkStyle : activeLink} href="Contact">Contacts</Link>
           </li>
           <li>
             <Link className={linkStyle} href="https://www.t-mobile.com/" target='_blank'>T-Mobile Website</Link>
