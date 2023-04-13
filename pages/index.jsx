@@ -32,6 +32,7 @@ export default function Roster() {
       <>
       <Navbar currentPage={0} />
       <main className=" mx-auto">
+        <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>Our Team</h1>
         <div className="">
           <Profile person={'gary'}/>
           <Profile person={'maddox'} />
