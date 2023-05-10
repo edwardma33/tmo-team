@@ -1,28 +1,37 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
-
 import Navbar from "@/components/Navbar";
 import Profile from "../components/Profile"
 import useWindow from "@/hooks/useWindow";
+import team from "./api/teamInfo";
 
 export default function Roster() {
-  if (useWindow() >= 900) {
+  const mobileExperts = []
+
+  for (let i = 0; i < team.length; i++) {
+    if (i > 1) {
+      mobileExperts.push(<Profile index={i} />)
+    }
+  }
+
+  if (useWindow() >= 906) {
     return (
     <>
     <Head>
       <title>TMO on Houk | Roster</title>
     </Head>
-    <Navbar currentPage={0} />
+    <Navbar />
     <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>Our Team</h1>
     <main className=" mx-auto">
       <div className=" columns-2 mb-4">
-        <Profile person={'gary'}/>
-        <Profile person={'maddox'} />
+        <Profile index={0}/>
+        <Profile index={1} />
       </div>
-      <div className=" columns-3 mb-4">
-        <Profile person={'joey'} />
-        <Profile person={'kyle'} />
-        <Profile person={'ben'} />
+      {/* This div must be dynamic depending on how many mobile experts there are (columns) */}
+      <div className=" columns-2 mb-4 mx-6">
+        {mobileExperts.map(expert => {
+          return expert
+        })}
       </div>
     </main>
     </>
@@ -30,15 +39,15 @@ export default function Roster() {
   } else {
     return (
       <>
-      <Navbar currentPage={0} />
+      <Navbar />
       <main className=" mx-auto">
         <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>Our Team</h1>
         <div className="">
-          <Profile person={'gary'}/>
-          <Profile person={'maddox'} />
-          <Profile person={'joey'} />
-          <Profile person={'kyle'} />
-          <Profile person={'ben'} />
+          <Profile index={0}/>
+          <Profile index={1} />
+          {mobileExperts.map(expert => {
+          return expert
+          })}
         </div>
       </main>
       </>

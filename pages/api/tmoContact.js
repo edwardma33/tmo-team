@@ -1,9 +1,11 @@
 const tmoContacts = [
-  { name: 'The Store',
+  { 
+    name: 'The Store',
     tele: '614-987-8673',
     role: 'Call the team',
   },
-  { name: 'Customer Care',
+  { 
+    name: 'Customer Care',
     tele: '1-800-937-8997',
     role: 'For the things we cannot do in store'
   },
