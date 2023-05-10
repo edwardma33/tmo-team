@@ -17,7 +17,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: 'poppins'
+        poppins: 'poppins',
+        poppinsThin: 'poppins-thin'
       }
     },
   },

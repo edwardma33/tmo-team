@@ -13,7 +13,7 @@ export default function Contact() {
     <Head>
       <title>TMO on Houk | Contact</title>
     </Head>
-    <Navbar currentPage={2} />
+    <Navbar />
     <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>Contacts</h1>
     <main className=' mx-auto px-10 md:columns-2'>
       <ContactCard index={0} />

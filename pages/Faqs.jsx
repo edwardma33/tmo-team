@@ -15,7 +15,7 @@ export default function Faqs() {
     <Head>
       <title>TMO on Houk | FAQs</title>
     </Head>
-    <Navbar currentPage={1} />
+    <Navbar />
     <h1 className=' font-poppins text-magenta text-6xl text-center pb-10'>FAQs</h1>
     <main className=' mx-auto px-10 xl:columns-2 dark:text-white'>
       {foo.map(bar => {
